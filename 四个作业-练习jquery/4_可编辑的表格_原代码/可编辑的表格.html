@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>可编辑表格</title>
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+<script type="text/javascript" src="table.js"></script>
+<style type="text/css">
+	*{
+		font-size:12px;
+	}
+	
+	table{
+		border:1px solid #999;
+		border-collapse:collapse;/*修正单元格之间的边框为可合并*/
+		width:400px;
+	}
+	
+	table tr{
+		line-height:24px;
+	}
+	
+	table tbody th{
+		background:#36F;
+		width:50%;
+	}
+	
+	table td{
+		text-align:center;
+	}
+	
+	a{
+		display:inline-block;
+		padding:8px;
+		background:#3C6;
+		text-decoration:none;
+		font-size:18px;
+		font-weight:bold;
+		color:#FC3;
+		font-family:"隶书";
+		margin-left:10px;
+	}
+	
+	a:hover{
+		background:#666;
+	}
+</style>
+</head>
+
+<body>
+    <table border="1px" cellpadding="0px" cellspacing="0px" id="mytable" align="center" width="600px">
+    	<thead>
+        	<tr>
+            	<th colspan="2">学生信息表</th>
+            </tr>
+        </thead>
+        <tbody>
+        	<tr>
+            	<th>学号</th>
+                <th>姓名</th>
+            </tr>
+            <tr>
+            	<td>08301440110</td>
+                <td>张三</td>
+            </tr>
+        	<tr>
+            	<td>08301440111</td>
+                <td>李四</td>
+            </tr>
+            <tr>
+            	<td>08301440112</td>
+                <td>王五</td>
+            </tr>
+            <tr>
+            	<td>08301440113</td>
+                <td>赵六</td>
+            </tr>
+            <tr>
+            	<td>08301440114</td>
+                <td>钱七</td>
+            </tr>
+            <tr>
+            	<td>08301440115</td>
+                <td>王八</td>
+            </tr>
+        </tbody>
+    </table>
+    <br /> <br />
+    <center><a href="javascript:delInfo()">删除光标所在行</a><a href="javascript:addInfo()">添加一行</a></center>
+</body>
+</html>
